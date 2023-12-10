@@ -1,0 +1,9 @@
+# This is a Read me file for trapezoidal rule program
+## In order to run the file use the following commands 
+
+------------- STEP 1 -----------------
+-> mpicc -g -Wall -o Trappy Trapezoidal.c -lm
+
+------------ STEP 2 ------------------
+mpiexec -n [num of processors to use ] ./Trappy [num of segments to divide the problem into] 
+e.g mpiexec -n 4 ./Trappy 32
